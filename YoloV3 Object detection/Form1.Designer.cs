@@ -41,6 +41,7 @@
             this.btn_open = new System.Windows.Forms.Button();
             this.btn_detect = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
+            this.testModelFromWebcamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).BeginInit();
@@ -75,7 +76,8 @@
             // 
             this.yOLO3ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadModelToolStripMenuItem,
-            this.testModelToolStripMenuItem});
+            this.testModelToolStripMenuItem,
+            this.testModelFromWebcamToolStripMenuItem});
             this.yOLO3ToolStripMenuItem.Name = "yOLO3ToolStripMenuItem";
             this.yOLO3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.yOLO3ToolStripMenuItem.Text = "YOLO 3";
@@ -83,14 +85,14 @@
             // loadModelToolStripMenuItem
             // 
             this.loadModelToolStripMenuItem.Name = "loadModelToolStripMenuItem";
-            this.loadModelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadModelToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.loadModelToolStripMenuItem.Text = "Load model";
             this.loadModelToolStripMenuItem.Click += new System.EventHandler(this.loadModelToolStripMenuItem_Click);
             // 
             // testModelToolStripMenuItem
             // 
             this.testModelToolStripMenuItem.Name = "testModelToolStripMenuItem";
-            this.testModelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testModelToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.testModelToolStripMenuItem.Text = "Test model";
             this.testModelToolStripMenuItem.Click += new System.EventHandler(this.testModelToolStripMenuItem_Click);
             // 
@@ -119,6 +121,9 @@
             // 
             // pictureBox_image
             // 
+            this.pictureBox_image.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_image.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_image.Location = new System.Drawing.Point(12, 27);
             this.pictureBox_image.Name = "pictureBox_image";
@@ -129,6 +134,7 @@
             // 
             // btn_open
             // 
+            this.btn_open.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_open.Location = new System.Drawing.Point(658, 27);
             this.btn_open.Name = "btn_open";
             this.btn_open.Size = new System.Drawing.Size(75, 23);
@@ -138,6 +144,7 @@
             // 
             // btn_detect
             // 
+            this.btn_detect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_detect.Location = new System.Drawing.Point(658, 56);
             this.btn_detect.Name = "btn_detect";
             this.btn_detect.Size = new System.Drawing.Size(75, 23);
@@ -147,12 +154,20 @@
             // 
             // btn_clear
             // 
+            this.btn_clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_clear.Location = new System.Drawing.Point(658, 85);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(75, 23);
             this.btn_clear.TabIndex = 5;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = true;
+            // 
+            // testModelFromWebcamToolStripMenuItem
+            // 
+            this.testModelFromWebcamToolStripMenuItem.Name = "testModelFromWebcamToolStripMenuItem";
+            this.testModelFromWebcamToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.testModelFromWebcamToolStripMenuItem.Text = "Test model from webcam";
+            this.testModelFromWebcamToolStripMenuItem.Click += new System.EventHandler(this.testModelFromWebcamToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -193,6 +208,7 @@
         private System.Windows.Forms.Button btn_open;
         private System.Windows.Forms.Button btn_detect;
         private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.ToolStripMenuItem testModelFromWebcamToolStripMenuItem;
     }
 }
 
